@@ -5,8 +5,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+
+	  <!-- Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Shopping list</h1>
+	
+	<div class="container" id="myContainer">
+		<h1>Shopping list</h1>
+		<div class="row" style="border: solid pink 1px; padding: 20px;">
+         <div class="col-sm-6">
+            <div class="form-group" style="display:flex">
+               <label for="budget"> Total budget:</label>
+               <input type="text" class="form-control" id="budget" value="">
+            </div>
+            <div class="form-group" style="display:flex">
+               <label for="topicWord">Topic word:</label>
+               <input type="text" class="form-control" id="topicWord" value="">
+            </div>
+   
+               <button type="submit" class="btn btn-default" style="float: right;" id="showBtn">Show</button>
+         </div>
+
+         <div class="col-sm-6">
+            <div class="form-group" style="display:flex">
+               <label for="description"> Description:</label>
+               <input type="text" class="form-control" id="description" value="">
+            </div>
+            <div class="form-group" style="display:flex">
+               <label for="price">Price:</label>
+               <input type="text" class="form-control" id="price" value="">
+            </div>
+   
+               <button type="submit" class="btn btn-default" style="float: right;" id="addBtn">Add</button>
+         </div>
+      </div>
+      <div class="row" style="border: solid pink 1px; padding: 20px;">
+         <div class="col-sm-4">
+            <h3>Total Price: <span class="totalPrice"></span></h3>
+         </div>
+         <div class="col-sm-8">
+               <h3>Shopping List Items:</h3>
+               <h3>Total Price: <span class="totalPrice"></span></h3>
+            </div>
+   
+	   </div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="shopping-list.js"></script>
+	<script src="shopping-list-dom.js"></script>
 </body>
 </html>
