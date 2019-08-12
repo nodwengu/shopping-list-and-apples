@@ -25,7 +25,15 @@ function addItem() {
             alert("greater than budget value");
         }
 
-        document.querySelector('.totalPrice').innerHTML = total
+        document.querySelector('.totalPrice').innerHTML = total;
+        console.log(list)
+        for(let i = 0; i < list.length; i++) {
+            let elem = list[i];
+            document.querySelector('.display').innerHTML +=  '<span class="grid-item">' + elem.description + '</span>'
+
+        }
+        
+
     } 
     // else if(!(descriptionVal.includes(topicVal))){
 
